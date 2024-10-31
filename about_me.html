@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            width: 100vw;
+            overflow-x: hidden;
+            background-color: #f5f5f5;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: aqua;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 10vh;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            width: 50px;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+
+        .logo:hover {
+            border-color: red;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        ul a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+
+        ul a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            margin-top: 10vh; /* Offset for the fixed nav */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 4rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .about-content {
+            max-width: 800px;
+            text-align: center;
+            font-size: 1.125rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 4rem 1rem;
+            background-color: #f0f4f8;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .team-member {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            width: 250px;
+            text-align: center;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 4rem 1rem;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .values-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .values-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .value {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 200px;
+            text-align: center;
+        }
+
+        .value img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .value h3 {
+            font-size: 1.25rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .value p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4a90e2;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav1">
+            <a href="https://www.youtube.com/@MAXGAMERZ90" target="_blank">
+                <img src="https://yt3.googleusercontent.com/IU_MEDBi1ks3o6DxoS633AZLfSNGKnoDBhMXW-KqbjshbJzD9RWh8R_QoDY7c2QMBuv2J-_G=s160-c-k-c0x00ffffff-no-rj" class="logo">
+            </a>
+        </div>
+        <div class="nav2">
+            <ul>
+                <a href="index.html" class="icon1">Home</a>
+                <a href="texture_packs.html" class="icon2">My Texture-Packs</a>
+                <a href="about_me.html" class="icon3">About Me</a>
+                <a href="contact_me.html" class="icon4">Contact Me</a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>About Me</h1>
+        <p>Welcome to my website! Me and my team are dedicated to providing top-notch services, contents, servers and creating valuable experiences for our discord friends and fans.</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>My Story</h2>
+        <p class="about-content">
+            Before few years, my friends and I decided to found a minecraft SMP proudly named "Apna1 SMP". After some days of establishment of SMP, it got hard to operate and eventually we had to closed it but that was the moment when i got two best friends, <a href="https://www.youtube.com/@naughtymc" target="_blank">NaughtyMC</a> and Ismail.
+        </p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2>Meet My Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <h3>Max_Gamerz90</h3>
+                <p>Texture-Pack Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <h3>NaughtyMC</h3>
+                <p>Web Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <h3>Ismail</h3>
+                <p>Lead Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <h2>Our Core Values</h2>
+        <div class="values-container">
+            <div class="value">
+                <img src="https://via.placeholder.com/80" alt="Integrity Icon">
+                <h3>Integrity</h3>
+                <p>We believe in honest and transparent relationships.</p>
+            </div>
+            <div class="value">
+                <img src="https://via.placeholder.com/80" alt="Innovation Icon">
+                <h3>Innovation</h3>
+                <p>We are committed to continuous improvement and creativity.</p>
+            </div>
+            <div class="value">
+                <img src="https://via.placeholder.com/80" alt="Excellence Icon">
+                <h3>Excellence</h3>
+                <p>Our team strives to exceed expectations in all areas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 NaughtyMC. All rights reserved.</p>
+    </footer>
+</body>
+</html>

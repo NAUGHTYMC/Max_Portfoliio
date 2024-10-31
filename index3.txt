@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        width: 100vw;
+    }
+
+    header {
+        margin: 54px;
+        display: flex;
+        border: solid;
+        width: 80vw;
+        /* justify-content: right; */
+        height: 346px;
+        padding: 54px;
+        border-radius: 23px;
+        /* background-image: url(https://i.ytimg.com/vi/KvLY4EyEWBk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZmnfbL3NhVseyYGbH_VdQTpe7Ng); */
+        /* background-repeat: no-repeat; */
+        /* background-size: 1000px; */
+        background-color: rgba(0, 0, 255, 0.637);
+        /* margin-top: 54px; */
+    }
+
+    .container2 {
+        display: flex;
+        justify-content: right;
+        width: 30vw;
+        /* border: 2px solid; */
+    }
+
+    .container2 img {
+        margin: 23px;
+        width: 300px;
+        height: 300px;
+        justify-self: right;
+        outline: 13px solid rgba(128, 128, 128, 0.651);
+        border-radius: 23px;
+    }
+
+    .container1 {
+        width: 50vw;
+    }
+
+    .container1 h1 {
+        font-size: 54px;
+        /* overflow: hidden; */
+        white-space: nowrap;
+        animation: scroll 5s linear 20ms 1;
+        position: relative;
+    }
+
+    .container1 h1::after {
+        content: "|";
+        animation: blink 0.7s step-end infinite;
+        position: absolute;
+        font-weight: 100;
+        /* right: 0; */
+    }
+
+    .header {
+        justify-content: center;
+        display: flex;
+        width: 80vw;
+        height: 100vh;
+        align-items: center;
+        border: 2px solid;
+        /* margin-top: 54px; */
+        /* height: 100vh; */
+        right: 0;
+        margin: 54px auto;
+    }
+
+    .capsules {
+        height: 50px;
+        /* border: 2px solid; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 45vw;
+    }
+
+    .capsules .c1 {
+        background-color: rgba(0, 0, 0, 0.281);
+        color: white;
+        padding: 5px;
+        border-radius: 12px;
+        border: 2px solid;
+        height: 24px;
+        /* margin-left: 23px; */
+        /* margin-right: ; */
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* width: 20px; */
+    }
+
+    .c1:hover {
+        color: black;
+    }
+
+    .c1s {
+        background-color: black;
+        width: 50vw;
+        height: 2px;
+    }
+
+    .icon1 {}
+
+    @keyframes scroll {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    .dis {
+        overflow: hidden;
+        white-space: wrap;
+        margin-top: 23px;
+    }
+
+    .sep2{
+        margin-top: 50px;
+        height: 5px;
+        width: 100vw;
+        background-color: gray;
+    }
+
+    .mainbody{
+
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="nav1">
+            <a href="https://www.youtube.com/@MAXGAMERZ90" target="_blank"><img
+                    src="https://yt3.googleusercontent.com/IU_MEDBi1ks3o6DxoS633AZLfSNGKnoDBhMXW-KqbjshbJzD9RWh8R_QoDY7c2QMBuv2J-_G=s160-c-k-c0x00ffffff-no-rj"
+                    class="logo"></a>
+        </div>
+        <div class="nav2">
+            <ul>
+                <a href="index.html" class="icon1">Home</a>
+                <a href="texture_packs.html" class="icon2">My Texture-Packs</a>
+                <a href="about_me.html" class="icon3 ">About me</a>
+                <a href="contact_me.html" class="icon4">Contact me</a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="header">
+            <header>
+                <div class="container1">
+                    <h1>Max_Gamerz</h1>
+                    <div class="capsules">
+                        <span class="c1">Video Editor</span>
+                        <span class="c1">Influencer</span>
+                        <span class="c1">Textute-Packs Developer</span>
+                        <span class="c1">Minecraft Lover</span>
+                    </div>
+                    <div class="c1s"></div>
+                    <div class="dis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magnam nulla impedit! Ratione
+                        porro doloremque natus voluptate. Voluptatem atque tempora ipsa repellendus assumenda vero
+                        expedita. Quas esse ipsum minima blanditiis architecto voluptatem odio aut recusandae ducimus,
+                        dolor maiores aliquam, delectus numquam. Nam sapiente nihil dignissimos maxime consequuntur
+                        tenetur nostrum nulla nemo, et rem minima nobis neque delectus unde cum sint! Repellendus natus
+                        commodi sit corporis?
+                    </div>
+                </div>
+                <div class="container2">
+                    <img src="https://yt3.googleusercontent.com/IU_MEDBi1ks3o6DxoS633AZLfSNGKnoDBhMXW-KqbjshbJzD9RWh8R_QoDY7c2QMBuv2J-_G=s160-c-k-c0x00ffffff-no-rj"
+                        alt="" class="headerlogo">
+                </div>
+            </header>
+        </div>
+        <div class="sep2"></div>
+        <div class="mainbody"></div>
+    </main>
+
+</html>

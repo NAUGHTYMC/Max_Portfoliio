@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    /* Reset and global styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body,
+    html {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    /* Navigation bar */
+    nav {
+        background-color: aqua;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        width: 50px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+
+    .logo:hover {
+        border-color: red;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    ul a:hover {
+        text-decoration: underline;
+    }
+
+    /* Main content */
+    main {
+        margin-top: 10vh;
+        /* Offset for the fixed nav */
+        width: 100vw;
+        background-color: yellowgreen;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Header section */
+    .header {
+        width: 80vw;
+        max-width: 1200px;
+        margin: 3rem auto;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        border: solid 2px #000;
+        border-radius: 1rem;
+        background-color: rgba(0, 0, 255, 0.637);
+    }
+
+    .container1 {
+        width: 60%;
+    }
+
+    .container1 h1 {
+        font-size: 3rem;
+        white-space: nowrap;
+        animation: scroll 5s linear 1;
+        position: relative;
+    }
+
+    .container1 h1::after {
+        content: "|";
+        animation: blink 0.7s step-end infinite;
+        position: absolute;
+        font-weight: 100;
+    }
+
+    .capsules {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .capsules .c1 {
+        background-color: rgba(0, 0, 0, 0.281);
+        color: white;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: 2px solid #000;
+        transition: color 0.3s;
+    }
+
+    .capsules .c1:hover {
+        color: black;
+    }
+
+    .c1s {
+        background-color: black;
+        height: 2px;
+        margin: 1rem 0;
+    }
+
+    .dis {
+        margin-top: 1rem;
+        white-space: normal;
+    }
+
+    .container2 {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 395px;
+        border: 2px solid;
+    }
+
+    .container2 img {
+        height: 100%;
+        max-height: 250px;
+        width: auto;
+        border-radius: 1rem;
+        outline: 13px solid rgba(128, 128, 128, 0.651);
+    }
+
+    .sep2 {
+        width: 100%;
+        height: 5px;
+        background-color: gray;
+        /* margin-top: 2rem; */
+    }
+
+    .main1 {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-image: url(https://i.redd.it/zlwl0qbfqv681.jpg);
+        background-size: 100vw;
+    }
+
+    footer {
+        width: 95vw;
+        height: 100vh;
+        /* background-color: yellowgreen; */
+        /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
+        /* background: linear-gradient(135deg, #ff7e5f, #feb47b); */
+        /* background: linear-gradient(135deg, #1dd1a1, #48dbfb); */
+        background: linear-gradient(135deg, #00c9a7, #4dd9b4, #92fe9d);
+
+
+        display: flex;
+        border: 2px solid;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer h1 {
+        width: 90vw;
+        height: 10vh;
+        margin: auto;
+        border: 2px solid;
+        margin-top: 23px;
+        display: flexbox;
+        /* align-self: center; */
+        text-align: center;
+        font-weight: 900;
+        font-size: 37px;
+        text-decoration: underline double;
+        /* text-decoration-line: initial; */
+        margin-bottom: 23px;
+    }
+
+    .text-gradient {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .mainfooter {
+        width: 90vw;
+        height: 50vh;
+        background-color: rgba(0, 0, 0, 0.514);
+        border-radius: 23px;
+        
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+
+    /* Keyframes */
+    @keyframes scroll {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="nav1">
+            <a href="https://www.youtube.com/@MAXGAMERZ90" target="_blank">
+                <img src="https://yt3.googleusercontent.com/IU_MEDBi1ks3o6DxoS633AZLfSNGKnoDBhMXW-KqbjshbJzD9RWh8R_QoDY7c2QMBuv2J-_G=s160-c-k-c0x00ffffff-no-rj"
+                    class="logo">
+            </a>
+        </div>
+        <div class="nav2">
+            <ul>
+                <a href="index.html" class="icon1">Home</a>
+                <a href="texture_packs.html" class="icon2">My Texture-Packs</a>
+                <a href="about_me.html" class="icon3">About me</a>
+                <a href="contact_me.html" class="icon4">Contact me</a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="main1">
+            <div class="header">
+                <div class="container1">
+                    <h1>Max_Gamerz</h1>
+                    <div class="capsules">
+                        <span class="c1">Video Editor</span>
+                        <span class="c1">Influencer</span>
+                        <span class="c1">Texture-Packs Developer</span>
+                        <span class="c1">Minecraft Lover</span>
+                    </div>
+                    <div class="c1s"></div>
+                    <div class="dis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magnam nulla impedit! Ratione
+                        porro doloremque natus voluptate. Voluptatem atque tempora ipsa repellendus assumenda vero
+                        expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus sunt,
+                        cumque quasi cum officiis beatae deleniti ex qui. Porro tempora fuga earum labore reprehenderit
+                        dolorem nisi saepe eaque aliquid sunt, minus officia voluptate.
+                    </div>
+                </div>
+                <div class="container2">
+                    <img src="https://yt3.googleusercontent.com/IU_MEDBi1ks3o6DxoS633AZLfSNGKnoDBhMXW-KqbjshbJzD9RWh8R_QoDY7c2QMBuv2J-_G=s160-c-k-c0x00ffffff-no-rj"
+                        alt="Header Logo" class="headerlogo">
+                </div>
+            </div>
+        </div>
+        <div class="sep2"></div>
+        <div class="mainbody"></div>
+    </main>
+    <div class="footer">
+    <footer>
+        <div class="h1 text-gradient">
+            <h1>Play Minecraft with Me</h1>
+        </div>
+        <div class="mainfooter">
+            <img src="https://img.icons8.com/?size=256&id=2tVBfYEPOkAs&format=png" alt="">
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>
